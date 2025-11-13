@@ -44,3 +44,26 @@ The main goals are:
 └── figures/           # Plots generated from logs
     ├── acc_curve.png  # Top-1 / Top-5 vs. epoch
     └── loss_curve.png # Train / test loss vs. epoch
+
+## 4. Dataset
+
+We do not include the CIFAR-100 dataset in this repository.
+
+Please download CIFAR-100 from the official website or via torchvision and place it in a local directory, e.g.:
+
+data/
+  cifar100/
+    cifar-100-python/
+      train
+      test
+      meta
+
+
+When running main.py, set --data-path to the CIFAR-100 root directory. For example, if your path is data/cifar100, use:
+
+--data-set CIFAR --data-path ./data/cifar100
+
+
+On the BU SCC, we used a shared path similar to:
+
+--data-path /projectnb/ec523bn/students/<user>/Datasets/cifar100

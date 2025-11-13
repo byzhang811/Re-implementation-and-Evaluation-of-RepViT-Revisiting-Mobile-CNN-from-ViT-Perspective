@@ -44,7 +44,7 @@ The main goals are:
 └── figures/           # Plots generated from logs
     ├── acc_curve.png  # Top-1 / Top-5 vs. epoch
     └── loss_curve.png # Train / test loss vs. epoch
-
+```text
 ## 4. Dataset
 
 We do not include the CIFAR-100 dataset in this repository.

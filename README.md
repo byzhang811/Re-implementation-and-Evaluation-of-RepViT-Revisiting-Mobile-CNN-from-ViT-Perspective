@@ -52,7 +52,7 @@ Below is the structure of our cleaned and organized project repository:
 
 We do **not** include the CIFAR-100 dataset in this repository (due to size limitations).
 
-Please download CIFAR-100 from the official website or via `torchvision.datasets`,  
+Please download CIFAR-100 from the official website or via `[torchvision.datasets](https://www.cs.toronto.edu/~kriz/cifar.html)`,  
 and place it in the following structure:
 
 data/  

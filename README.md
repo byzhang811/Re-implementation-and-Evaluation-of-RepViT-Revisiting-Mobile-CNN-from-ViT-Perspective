@@ -23,41 +23,44 @@ The main goals are:
 
 ## 2. Repository Structure
 
-```text
+Below is the structure of our cleaned and organized project repository:
+
 .
-├── main.py            # Training / evaluation entry
-├── engine.py          # train_one_epoch, evaluate
-├── losses.py          # Cross-entropy + distillation loss
-├── utils.py           # EMA, logging, checkpoint utilities
-├── requirements.txt   # Python package dependencies
+├── main.py               # Training / evaluation entry
+├── engine.py             # train_one_epoch, evaluate
+├── losses.py             # Cross-entropy + optional distillation loss
+├── utils.py              # EMA, logging, checkpoint utilities
+├── requirements.txt      # Python dependencies
 │
-├── model/             # RepViT model definitions
+├── model/                # RepViT model definitions
 │   └── ...
 │
-├── data/              # Dataset building and augmentations
+├── data/                 # Dataset building & augmentations
 │   └── ...
 │
-├── logs/              # Training logs and model summaries
+├── logs/                 # Training logs & summaries
 │   ├── run1_log.txt
 │   └── run1_model.txt
 │
-└── figures/           # Plots generated from logs
-    ├── acc_curve.png  # Top-1 / Top-5 vs. epoch
-    └── loss_curve.png # Train / test loss vs. epoch
-```text
-## 4. Dataset
+└── figures/              # Plots generated from logs
+    ├── acc_curve.png     # Top-1 / Top-5 accuracy curves
+    └── loss_curve.png    # Training / validation loss curves
 
-We do not include the CIFAR-100 dataset in this repository.
+---
 
-Please download CIFAR-100 from the official website or via torchvision and place it in a local directory, e.g.:
+## 3. Dataset
 
-data/
-  cifar100/
-    cifar-100-python/
-      train
-      test
-      meta
+We do **not** include the CIFAR-100 dataset in this repository (due to size limitations).
 
+Please download CIFAR-100 from the official website or via `torchvision.datasets`,  
+and place it in the following structure:
+
+data/  
+└── cifar100/  
+  └── cifar-100-python/  
+    ├── train  
+    ├── test  
+    └── meta
 
 When running main.py, set --data-path to the CIFAR-100 root directory. For example, if your path is data/cifar100, use:
 

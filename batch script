@@ -60,7 +60,6 @@ python main.py \
   --epochs 300 \
   --batch-size 256 \
   --num_workers 4 \
-  --distillation-type none \
   --input-size \$IM \
   --lr \$LR \
   --weight-decay \$WD \

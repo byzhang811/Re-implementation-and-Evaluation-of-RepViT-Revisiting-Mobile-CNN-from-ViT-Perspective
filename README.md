@@ -26,6 +26,7 @@ The main goals are:
 
 Below is the structure of our cleaned and organized project repository:
 
+```bash
 .
 ├── main.py               # Training / evaluation entry (Boyang, 351 lines)
 ├── engine.py             # train_one_epoch, evaluate (Ziqi, Youwei, 100 lines)
@@ -49,7 +50,7 @@ Below is the structure of our cleaned and organized project repository:
 └── figures/              # Plots generated from logs
     ├── Loss_run1.png     # Training / validation loss curves
     └── Top1&5_r1.png     # Top-1 / Top-5 accuracy curves
-
+```
 ---
 
 ## 3. Installation Instructions
